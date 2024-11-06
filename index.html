@@ -14,10 +14,13 @@
 	<link rel="stylesheet" href="style.css">
 	<link rel="stylesheet" href="style-responsive.css">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=arrow_forward" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
 	<script src="js/jquery.js"></script>
 	<script src="js/simple-lightbox.js"></script>
 	<script src="js/scripts.js"></script>
 	<script src="js/navigation.js"></script>
+	<script src="carousel.js"></script>
 </head>
 <body id="home">
 
@@ -125,80 +128,92 @@
 
 	<!-- SERVICES -->
 	<section class="portfolio" >
-		<div class="container">
-			
-
-
-			<div class="port-items">
+		<div class="container swiper">
+			<div class="card-wrapper">
+				<ul class="card-list swiper-wrapper">
+					<li class="card-item swiper-slide">
+						<a href="#" class="card-link">
+							<img src="images/sales.jpg" alt="Sales/Services"
+							class="card-image">
+							<p class="badge"> Sales/Services </p>
+							<h2 class="card-title">Offering tech products and services, including GCash transactions and more!</h2>
+							<button class="card-button material-symbols-rounded">arrow_forward</button>
+						</a>
+					</li>
+					<li class="card-item swiper-slide">
+						<a href="#" class="card-link">
+							<img src="images/comp_repair.jpg" alt="PC Repair & Upgrades"
+							class="card-image">
+							<p class="badge"> PC Repair & Upgrades </p>
+							<h2 class="card-title">Diagnose, repair, and enhance your PC’s performance efficiently.</h2>
+							<button class="card-button material-symbols-rounded">arrow_forward</button>
+						</a>
+					</li>
+					<li class="card-item swiper-slide">
+						<a href="#" class="card-link">
+							<img src="images/print.jpg" alt="Printing"
+							class="card-image">
+							<p class="badge">Printing/Photocopying Services</p> 
+							<h2 class="card-title"> Quick and affordable document printing and photocopying for all your needs.</h2>
+							<button class="card-button material-symbols-rounded">arrow_forward</button>
+						</a>
+					</li>
+					<li class="card-item swiper-slide">
+						<a href="#" class="card-link">
+							<img src="images/repair.jpg" alt="Laptop Repair"
+							class="card-image">
+							<p class="badge"> Laptop Repairs</p>
+							<h2 class="card-title">Professional laptop repairs to get your device back in top shape.</h2>
+							<button class="card-button material-symbols-rounded">arrow_forward</button>
+						</a>
+					</li>
+					<li class="card-item swiper-slide">
+						<a href="#" class="card-link">
+							<img src="images/install.png" alt="installation"
+							class="card-image">
+							<p class="badge"> System Formatting/Installation</p>
+							<h2 class="card-title">Complete OS installations and formatting for a fresh start on your system.</h2>
+							<button class="card-button material-symbols-rounded">arrow_forward</button>
+						</a>
+					</li>
+					<li class="card-item swiper-slide">
+						<a href="#" class="card-link">
+							<img src="images/software.jpg" alt="Upgrades"
+							class="card-image">
+							<p class="badge"> Software Upgrades</p>
+							<h2 class="card-title">Update to the latest software for improved performance and security.</h2>
+							<button class="card-button material-symbols-rounded">arrow_forward</button>
+						</a>
+					</li>
+					<li class="card-item swiper-slide">
+						<a href="#" class="card-link">
+							<img src="images/sysdev.jpg" alt="System Development"
+							class="card-image">
+							<p class="badge"> System Development</p>
+							<h2 class="card-title">Custom system development to meet your specific business requirements.</h2>
+							<button class="card-button material-symbols-rounded">arrow_forward</button>
+						</a>
+					</li>
+					<li class="card-item swiper-slide">
+						<a href="#" class="card-link">
+							<img src="images/burning.jpg" alt="CD/DVD Burning"
+							class="card-image">
+							<p class="badge"> CD/DVD Burning</p>
+							<h2 class="card-title">Reliable CD and DVD burning services for data storage or media sharing.</h2>
+							<button class="card-button material-symbols-rounded">arrow_forward</button>
+						</a>
+					</li>
+				</ul>
 				
-				<div class="item">
-					<img src="images/comp_repair.jpg" alt="" title="" /></a>
-					<h4 class="item-text">PC Repair & Upgrades</h4>
-				</div>
-				<!--1-->
-
-				<div class="item">
-				 <img src="images/print.jpg" alt="" title="" /></a>
-					<h4 class="item-text">Printing/Photocopying Services</h4>
-				</div>
-				<!--2-->
-
-
-				<div class="item">
-					<img src="images/repair.jpg" alt="" title="" /></a>
-					<h4 class="item-text">Laptop/Mobile Repairs</h4>
-				</div>
-				<!--3-->
-
-
-				<div class="item">
-					<img src="images/burning.jpg" alt="" title="" /></a>
-					<h4 class="item-text">CD/DVD Burning</h4>
-				</div>
-				<!--4-->
-
-
-				<div class="item">
-					<img src="images/sysdev.jpg" alt="" title="" /></a>
-					<h4 class="item-text">System Development</h4>
-				</div>
-				<!--5-->
-
-				<div class="item">
-					<img src="images/install.png" alt="" title="" /></a>
-				  <h4 class="item-text">System Formatting/Installation</h4>
-				</div>
-				<!--6-->
-
-
-				<div class="item">
-					<img src="images/software.jpg" alt="" title="" /></a>
-					<h4 class="item-text">Software Upgrades</h4>
-				</div>
-				<!--7-->
-
-
-				<div class="item">
-					<img src="images/sales.jpg" alt="" title="" /></a>
-					<h4 class="item-text">Sales & Other Services</h4>
-				</div>
-				<!--8-->
-
-
-
+				<div class="swiper-pagination"></div>
+				<div class="swiper-slide-button swiper-button-prev"></div>
+				<div class="swiper-slide-button swiper-button-next"></div>
 			</div>
-			<!-- itemswrap -->
-
-
-			<br clear="all" />
-
-<!--
-			<div class="btn-wrap fl w100">
-				<a href="#" class="moreportfolio-link">See more on Flickr &nbsp; &nbsp; <i class="fa-solid fa-arrow-right-long"></i></a>
-			</div>
-			--->
-
 		</div>
+	
+		<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+		<script src="carousel.js"></script>
+
 	</section>
 	<!-- PORTFOLIO -->
 
